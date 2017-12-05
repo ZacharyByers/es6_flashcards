@@ -1,8 +1,8 @@
 $('.hidden').toggle()
 
 $(document).ready( function() {
-  const $cards = $('.col')
-  $cards.on('click', function() {
+
+  $(document).on('click', '.col', function() {
     $(this).children('.hidden').toggle()
   })
 
@@ -10,7 +10,7 @@ $(document).ready( function() {
     const $hint = $('#hint')
     const $answer = $('#answer')
     $('#flashcards').append(
-      `<div class='col s3 card'>
+      `<div class='col s3 card blue'>
         <p>${$hint.val()}</p>
         <h5 class='hidden'>${$answer.val()}</h5>
       </div>
