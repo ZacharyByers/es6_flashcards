@@ -1,0 +1,15 @@
+@import 'materialize.min.css';
+
+.title {
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  height: 210px;
+  border: 1px solid black;
+  border-radius: 15%;
+}

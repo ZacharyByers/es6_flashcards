@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ES6/Webpack Flash Cards</title>
+    <link rel='stylesheet' href='styles.css'/>
+  </head>
+
+  <body>
+    <h1 class='title'>ES6 Flashcards</h1>
+    <div class='container'>
+      <div class='row'>
+        <h5 class='title'> Add a Flashcard </h3>
+        <form class='col s6 offset-s3'>
+          <div class='row'>
+            <div class='input-field col s6'>
+              <input placeholder='Card Hint' type='text' id='hint'>
+            </div>
+            <div class='input-field col s6'>
+              <input placeholder='Card Answer' type='text' id='answer'>
+            </div>
+          </div>
+        </form>
+        <br/>
+        <div class='col s6 offset-s3'>
+          <button id='submit' class='btn'>Submit</button>
+        </div>
+      </div>
+
+      <div class='row' id='flashcards'>
+        <div class='col s1'></div>
+        <div class='col s3 card'>
+          <p>New variable declarations</p>
+          <h4 class='hidden'>let & const</h4>
+        </div>
+        <div class='col s1'></div>
+        <div class='col s3 card'>
+          <p>The "function" keyword</p>
+          <h4 class='hidden'>=></h4>
+        </div>
+        <div class='col s1'></div>
+        <div class='col s3 card'>
+          <p>The spread/rest operator</p>
+          <h4 class='hidden'>...</h4>
+        </div>
+        <div class='col s1'></div>
+
+        <div class='col s3 card'>
+          <p>Easy forEach loop</p>
+          <h4 class='hidden'>for (let foo of bar) {}</h4>
+        </div>
+        <div class='col s1'></div>
+        <div class='col s3 card'>
+          <p>Classes</p>
+          <p class='hidden'>
+            class Foo extends Bar {<br/>
+              constructor(a, b) {
+
+              }<br/>
+
+              fun() {
+
+              }<br/>
+            }
+          </p>
+        </div>
+        <div class='col s1'></div>
+        <div class='col s3 card'>
+          <p>Template Strings</p>
+          <h5 class='hidden'>`${foo}: ${bar}`</h4>
+        </div>
+        <div class='col s1'></div>
+
+        <div class='col s3 card'>
+          <p>Promises</p>
+          <img class='hidden' src='promiseCode.png' alt='promise' height='130' width='220'>
+        </div>
+        <div class='col s1'></div>
+        <div class='col s3 card'>
+          <p>Destructuring<p>
+          <p class='hidden'>
+            let { first, last, fullName, email, rank } = officerInfo("Clive", "Savacool", "Chief", "clive@fakemeail.com")
+          </p>
+        </div>
+        <div class='col s1'></div>
+        <div class='col s3 card'>
+          <p>Modules</p>
+          <h5 class='hidden'>import foo, { bar } from 'foo.js'</h5>
+        </div>
+        <div class='col s1'></div>
+        <div class='col s3 card'>
+          <p>Stuff</p>
+          <h5 class='hidden'>More Stuff</h5>
+        </div>
+        <div class='col s1'></div>
+      </div>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+  </body>
+</html>
