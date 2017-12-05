@@ -12,8 +12,14 @@
   height: 210px;
   border: 1px solid black;
   border-radius: 15%;
+
+}
+
+.delete {
+  margin-top: auto;
+  margin-bottom: 5px;
 }
 
 .hidden {
-
+  margin-top: auto;
 }
